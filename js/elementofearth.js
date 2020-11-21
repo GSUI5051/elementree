@@ -38,7 +38,7 @@ addLayer("eoe", {
     cols: 1,
     11: {
       unlocked() {return true},
-      title: "Choose this element",
+      title: "Choose the Element Of Earth",
       style: {
         "height": "200px",
         "width": "200px",
@@ -46,7 +46,8 @@ addLayer("eoe", {
         "border": "2px solid",
         "border-color": "rgba(0, 0, 0, 0.125)",
         "font-size": "10px"
-      }
+      },
+      canClick() {return true}
     }
   }
 })

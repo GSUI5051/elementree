@@ -16,7 +16,7 @@ var layoutInfo = {
 
 
  addLayer("tree-tab", {
-    tabFormat: [["tree", [["eow", "eoe", "eof"]]]]
+    tabFormat: [["tree", [["eow", "eoe", "eof", "eoa"]]]]
 })
 
 /*
