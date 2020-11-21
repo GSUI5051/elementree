@@ -1,7 +1,8 @@
 let modInfo = {
-	name: "The elementree",
+	name: "The Elementree",
 	id: "mymod",
-	author: "nobody",
+	author: "unpingabot#0245 & Five Hargreeves;
+#9676",
 	pointsName: "points",
 	discordName: "",
 	discordLink: "",
