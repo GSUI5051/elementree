@@ -1,5 +1,5 @@
 let modInfo = {
-	name: "The ??? Tree",
+	name: "The elementree",
 	id: "mymod",
 	author: "nobody",
 	pointsName: "points",
@@ -13,7 +13,7 @@ let modInfo = {
 
 // Set your version in num and name
 let VERSION = {
-	num: "0.0",
+	num: "0.01",
 	name: "Literally nothing",
 }
 
