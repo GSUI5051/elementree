@@ -47,6 +47,7 @@ addLayer("eoe", {
         "border-color": "rgba(0, 0, 0, 0.125)",
         "font-size": "10px"
       },
+      display() {return "Earth, the element of nature, increases the gain of everything except its own, most of the time"},
       canClick() {return true}
     }
   }

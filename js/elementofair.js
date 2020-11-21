@@ -39,7 +39,7 @@ addLayer("eoa", {
     11: {
       unlocked() {return true},
       title: "Choose the Element Of Air",
-      display: "Water has the ability to increase the gain of element points, whilst also giving synergy buffs",
+      display() {return "Air, the fast speedy creator of wind, slightly speeds up all time based production"},
       style: {
         "height": "200px",
         "width": "200px",
