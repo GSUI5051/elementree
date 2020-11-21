@@ -2,7 +2,7 @@ var layoutInfo = {
     startTab: "none",
 	showTree: true,
 
-    treeLayout: [["w"]]
+    treeLayout: [["w","e"]]
 
     
 }
@@ -16,7 +16,7 @@ var layoutInfo = {
 
 
  addLayer("tree-tab", {
-    tabFormat: [["tree", [["eow"]]]]
+    tabFormat: [["tree", [["eow", "eoe", "eof"]]]]
 })
 
 /*
