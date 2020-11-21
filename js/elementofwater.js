@@ -40,7 +40,7 @@ addLayer("eow", {
     11: {
       unlocked() {return true},
       title: "Choose the Element Of Water",
-      display() {return "Water has the ability to increase the gain of element points, while also giving many synergy buffs"},
+      display() {return "Water, the most giving of the elements, has the ability to increase the gain of element points, while also giving many synergy buffs"},
       style: {
         "height": "200px",
         "width": "200px",
