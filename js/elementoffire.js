@@ -39,7 +39,7 @@ addLayer("eof", {
     11: {
       unlocked() {return true},
       title: "Choose the Element Of Fire",
-      display() {return "Fire, is a selfish creature... fire increases its own gain while almost never powering up other elements"},
+      display() {return "Fire, is a selfish creature... fire increases its own gain while almost never powering up other elements... <i>almost</i>"},
       style: {
         "height": "200px",
         "width": "200px",
