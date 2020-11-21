@@ -2,7 +2,7 @@ let modInfo = {
 	name: "The Elementree",
 	id: "mymod",
 	author: "unpingabot#0245 & Five Hargreeves;#9676",
-	pointsName: "points",
+	pointsName: "Elemental Points",
 	discordName: "",
 	discordLink: "",
 	changelogLink: "https://github.com/Acamaeda/The-Modding-Tree/blob/master/changelog.md",
