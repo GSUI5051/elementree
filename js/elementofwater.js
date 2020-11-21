@@ -33,5 +33,8 @@ addLayer("eow", {
     gainExp() { // Calculate the exponent on main currency from bonuses
         return new Decimal(1)
     }, */
-  tabFormat: [["tree", [["w"], ["i"]]]]
+  tabFormat: [["tree", [["w"], ["i"]]]],
+  clickables: {
+    rows: 1
+  }
 })
