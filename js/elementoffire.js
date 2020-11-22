@@ -28,7 +28,7 @@ addLayer("eof", {
   infoboxes: {
       lore: {
           title: "Fire",
-          body() { return hasUpgrade("f", 31) ? "I've mastered the arts of Fire." : `You would like to learn the arts of Fire Bending? You want to master Fire Bending and become the best Avatar you can? Well get started then! <br/>
+          body() { return hasUpgrade("f", 31) ? "You have mastered the arts of fire. You can still use fire as a way to gain points though!" : `You would like to learn the arts of Fire Bending? You want to master Fire Bending and become the best Avatar you can? Well get started then! <br/>
            <br/>
            Fire burns brightly and encourages active play.
            <br/>
