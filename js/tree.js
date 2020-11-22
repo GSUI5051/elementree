@@ -9,14 +9,14 @@ var layoutInfo = {
 
 
 // A "ghost" layer which offsets other layers in the tree
-/*addNode("blank", {
+addNode("blank", {
     layerShown: "ghost",
 }, 
-) */
+)
 
 
  addLayer("tree-tab", {
-    tabFormat: [["tree", [["eow", "eoe", "eof", "eoa"]]]]
+    tabFormat: [["tree", [["blank", "eow", "eoe", "eof", "eoa", "blank"]]]]
 })
 
 /*

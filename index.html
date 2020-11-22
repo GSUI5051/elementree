@@ -2,12 +2,15 @@
 <head>
 
 	<link rel="stylesheet" type="text/css" href="style.css" />
-	<link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">a
+  <link href="https://fonts.googleapis.com/css2?family=Nova+Mono&family=Titillium+Web&display=swap" rel="stylesheet">
 	<script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
 	<script type="text/javascript" src="js/technical/break_eternity.js"></script>
 	<script type="text/javascript" src="js/technical/layerSupport.js"></script>
 	<script type="text/javascript" src="js/tree.js"></script>
+  <script type="text/javascript" src="js/none.js"></script>
 	<script type="text/javascript" src="js/water.js"></script>
+  <script type="text/javascript" src="js/fire.js"></script>
   <script type="text/javascript" src="js/elementofwater.js"></script>
   <script type="text/javascript" src="js/elementofearth.js"></script>
   <script type="text/javascript" src="js/elementoffire.js"></script>
@@ -25,7 +28,6 @@
 <body onload="load()">
 	<div id="app"> 
 		<canvas id="treeCanvas" class="canvas" v-if ="!(gameEnded && !player.keepGoing)"></canvas>
-
 		<div v-if="false" id="loadingSection" class="fullWidth">
 			<h1>Loading... (If this takes too long it means there was a serious error!)←</h1>
 		</div>
@@ -54,7 +56,7 @@
 			<div id="version" class="overlayThing" style="margin-right: 13px">{{VERSION.withoutName}}</div>
 			<button v-if= "player.navTab == 'none' && (tmp[player.tab].row == 'side' || tmp[player.tab].row == 'otherside')" class="other-back overlayThing" onclick="goBack()">←</button>
 			<img id="optionWheel"  class="overlayThing" v-if="player.tab!='options-tab'" src="options_wheel.png" onclick="showTab('options-tab')"></img>
-			<div id="info" v-if="player.tab!='info-tab'"  class="overlayThing" onclick="showTab('info-tab')"><br>i</div>
+			<div id="info" v-if="player.tab!='info-tab'"  class="overlayThing" onclick="showTab('info-tab')">i</div>
 			<div id="discord" class="overlayThing">
 				<img onclick="window.open((modInfo.discordLink ? modInfo.discordLink : 'https://discord.gg/F3xveHV'),'mywindow')" src="discord.png"  target="_blank"></img>
 				<ul id="discord-links">

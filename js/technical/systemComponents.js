@@ -126,6 +126,8 @@ var systemComponents = {
 		<br>
 		<span v-if="canGenPoints()"  class="overlayThing">({{format(getPointGen())}}/sec)</span>
 		<div v-for="thing in tmp.displayThings" class="overlayThing"><span v-if="thing" v-html="thing"></span></div>
+    <br>
+    <infobox layer="none" data="story"></infobox>
 	</div>
 	`
     },
@@ -137,10 +139,20 @@ var systemComponents = {
         <br>
         <h3>{{VERSION.withName}}</h3>
         <span v-if="modInfo.author">
-            <br>
-            Made by {{modInfo.author}}	
+            <br><br>
+            <b>Made by:</b> <br>
+            unpingabot#0245 <br>
+            thepaperpilot#1210 <br>
+            Five Hargreeves#9676
         </span>
-        <br>
+        <br><br>
+        <b>People who helped:</b> <br>
+        Jacorb#8747<br>
+        💜Emi💜#5662 <br>
+        epicness1582#9210 <br>
+        gapples2#5323 <br>
+        pg132#7975 <br>
+        
         The Modding Tree {{TMT_VERSION.tmtNum}} by Acamaeda
         <br>
         The Prestige Tree made by Jacorb and Aarex
@@ -176,9 +188,10 @@ var systemComponents = {
                 <td><button class="opt" onclick="adjustMSDisp()">Show Milestones: {{ player.msDisplay.toUpperCase() }}</button></td>
                 <td><button class="opt" onclick="toggleOpt('hqTree')">High-Quality Tree: {{ player.hqTree?"ON":"OFF" }}</button></td>
             </tr>
-                <tr>
-                    <td><button class="opt" onclick="toggleOpt('hideChallenges')">Completed Challenges: {{ player.hideChallenges?"HIDDEN":"SHOWN" }}</button></td>
-                <!--	<td><button class="opt" onclick="toggleOpt('oldStyle')">Style: {{ player.oldStyle?"v1.0":"NEW" }}</button></td>-->
+            <tr>
+                <td><button class="opt" onclick="toggleOpt('hideChallenges')">Completed Challenges: {{ player.hideChallenges?"HIDDEN":"SHOWN" }}</button></td>
+                <td><button class="opt" onclick="toggleOpt('nerdMode')">Nerd Mode: {{ player.nerdMode?"ALWAYS":"WHEN HOLDING SHIFT" }}</button></td>
+            <!--	<td><button class="opt" onclick="toggleOpt('oldStyle')">Style: {{ player.oldStyle?"v1.0":"NEW" }}</button></td>-->
             </tr> 
         </table>`
     },

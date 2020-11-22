@@ -13,11 +13,12 @@ addLayer("eoa", {
   position: 0, // Horizontal position within a row. By default it uses the layer id and sorts in alphabetical order
   color: "#ebf9ff",
   row: 0, // Row the layer is in on the tree (0 is the first row)
-  layerShown(){return true},
+  layerShown(){return (player.chosen.includes("air")||player.canChoose)},
   /*startData() { return {
         unlocked: true,
 		points: new Decimal(0),
     }}, */
+  startData() {return {unlocked: true}},
   tooltip() {return "Element Of Air"},
   /*requires: new Decimal(10), // Can be a function that takes requirement increases into account
   resource: "Water", // Name of prestige currency
@@ -32,12 +33,20 @@ addLayer("eoa", {
     gainExp() { // Calculate the exponent on main currency from bonuses
         return new Decimal(1)
     }, */
-  tabFormat: ["clickables"],
+  infoboxes: {
+      lore: {
+          title: "Air",
+          body: `You would like to learn the arts of Air Bending? You want to master Air Bending and become the best Avatar you can? Well get started then! <br/>
+        <br/>
+      Airs ability speeds up time by x1.2, this can be upgrade alot to be even more op!`
+      }
+  },
+  tabFormat: [["infobox", "lore"], "clickables"],
   clickables: {
     rows: 1,
     cols: 1,
     11: {
-      unlocked() {return true},
+      unlocked() {return (!(player.chosen.includes("air"))&& player.canChoose)},
       title: "Choose the Element Of Air",
       display() {return "Air, the fast speedy creator of wind, slightly speeds up all time based production"},
       style: {
@@ -46,9 +55,15 @@ addLayer("eoa", {
         "border-radius": "25%",
         "border": "2px solid",
         "border-color": "rgba(0, 0, 0, 0.125)",
-        "font-size": "10px"
+        "font-size": "12px"
       },
-      canClick() {return true}
+      canClick() {return true},
+      onClick() {
+        if (confirm("Are you sure you want to start with Air?")) {
+          player.chosen.push("air")
+          player.canChoose = false
+        }
+      }
     }
   }
 })
