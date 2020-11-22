@@ -618,7 +618,11 @@ function showNavTab(name) {
 
 
 function goBack() {
-	if (player.navTab !== "none") showTab("none")
+	// if (player.navTab !== "none") showTab("none")
+  if (player.tab == "w") showTab("eow") 
+  else if (player.tab == "f") showTab("eof") 
+  else if (player.tab == "e") showTab("eoe") 
+  else if (player.tab == "a") showTab("eoa") 
 	else showTab(player.lastSafeTab)
 }
 
